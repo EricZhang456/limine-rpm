@@ -14,7 +14,7 @@ Requires:	glibc
 Source0:	https://github.com/limine-bootloader/limine/releases/download/v4.20221216.0/limine-4.20221216.0.tar.xz
 
 %description
-Limine is an advanced, portable, multiprotocol bootloader that supports Linux, \
+Limine is an advanced, portable, multiprotocol bootloader that supports Linux,
 multiboot1 and 2, the native Limine boot protocol, and more.
 
 %prep
@@ -49,7 +49,7 @@ Release:	1
 Summary:	An advanced, portable, multiprotocol bootloader (development library)
 
 %description devel
-Limine is an advanced, portable, multiprotocol bootloader that supports Linux, \
+Limine is an advanced, portable, multiprotocol bootloader that supports Linux,
 multiboot1 and 2, the native Limine boot protocol, and more. (development library)
 
 %files devel
