@@ -1,13 +1,14 @@
 Name:		limine
 Version:	4.20221216.0
-Release:	2	
+Release:	1	
 Summary:	An advanced, portable, multiprotocol bootloader
 License:	BSD
 URL:		https://limine-bootloader.org/
 BuildRequires:	nasm
 BuildRequires:	mtools
-BuildRequires:	binutils
-BuildRequires:	gcc
+BuildRequires:	llvm
+BuildRequires:	lld
+BuildRequires:	clang
 BuildArch:	x86_64
 Requires:	glibc
 Source0:	https://github.com/limine-bootloader/limine/releases/download/v4.20221216.0/limine-4.20221216.0.tar.xz
@@ -43,6 +44,8 @@ multiboot1 and 2, the native Limine boot protocol, and more.
 %{_datadir}/%{name}/limine-cd-efi.bin
 
 %package devel
+Version:	4.20221216.0
+Release:	1	
 Summary:	An advanced, portable, multiprotocol bootloader (development library)
 
 %description devel
@@ -53,7 +56,5 @@ multiboot1 and 2, the native Limine boot protocol, and more. (development librar
 %{_includedir}/limine.h
 
 %changelog
-* Mon Dec 19 2022 Eric Zhang <ericzhang456@disroot.org> - 4.20221216.0
-    - change clang to gcc
 * Mon Dec 19 2022 Eric Zhang <ericzhang456@disroot.org> - 4.20221216.0
     - initial
