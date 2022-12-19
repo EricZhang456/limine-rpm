@@ -21,7 +21,7 @@ multiboot1 and 2, the native Limine boot protocol, and more.
 %autosetup
 
 %conf
-%configure --enable-all
+%configure --enable-all CROSS_TOOLCHAIN=llvm
 
 %build
 %make_build
