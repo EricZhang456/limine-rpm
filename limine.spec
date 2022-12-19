@@ -30,7 +30,7 @@ multiboot1 and 2, the native Limine boot protocol, and more.
 %make_install
 
 %files
-#%license LICENSE
+%license LICENSE.md
 # Limine utilities
 %{_bindir}/limine-version
 %{_bindir}/limine-deploy
