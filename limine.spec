@@ -11,7 +11,7 @@ BuildRequires:	lld
 BuildRequires:	clang
 BuildArch:	x86_64 i386 aarch64 i586
 Requires:	glibc
-Source0:	https://github.com/limine-bootloader/limine/releases/download/v%{version}/limine-4.20221216.0.tar.xz
+Source0:	https://github.com/limine-bootloader/limine/releases/download/v%{version}/limine-%{version}.tar.xz
 
 %description
 Limine is an advanced, portable, multiprotocol bootloader that supports Linux,
