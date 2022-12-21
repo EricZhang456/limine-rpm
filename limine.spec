@@ -9,7 +9,7 @@ BuildRequires:	mtools
 BuildRequires:	llvm
 BuildRequires:	lld
 BuildRequires:	clang
-BuildArch:	x86_64 i686 aarch64
+BuildArch:	x86_64 i386 aarch64
 Requires:	glibc
 Source0:	https://github.com/limine-bootloader/limine/releases/download/v%{version}/limine-4.20221216.0.tar.xz
 
@@ -24,7 +24,7 @@ multiboot1 and 2, the native Limine boot protocol, and more.
 %ifarch x86_64
 %configure --enable-bios-cd --enable-bios-pxe --enable-bios --enable-uefi-x86-64 --enable-uefi-cd CROSS_TOOLCHAIN=llvm
 %endif
-%ifarch i686
+%ifarch i386
 %configure --enable-bios-cd --enable-bios-pxe --enable-bios --enable-uefi-ia32 --enable-uefi-cd CROSS_TOOLCHAIN=llvm
 %endif
 %ifarch aarch64
@@ -41,11 +41,11 @@ multiboot1 and 2, the native Limine boot protocol, and more.
 %license LICENSE.md
 # Limine utilities
 %{_bindir}/limine-version
-%ifarch x86_64 i686
+%ifarch x86_64 i386
 %{_bindir}/limine-deploy
 %endif
 # Limine
-%ifarch x86_64 i686
+%ifarch x86_64 i386
 %{_datadir}/%{name}/limine-pxe.bin
 %{_datadir}/%{name}/limine-cd.bin
 %{_datadir}/%{name}/limine-cd-efi.bin
@@ -58,7 +58,7 @@ multiboot1 and 2, the native Limine boot protocol, and more.
 %ifarch x86_64
 %{_datadir}/%{name}/BOOTX64.EFI
 %endif
-%ifarch i686
+%ifarch i386
 %{_datadir}/%{name}/BOOTIA32.EFI
 %endif
 
