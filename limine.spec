@@ -1,6 +1,6 @@
 Name:		limine
 Version:	4.20221216.0
-Release:	3
+Release:	4
 Summary:	An advanced, portable, multiprotocol bootloader
 License:	BSD
 URL:		https://limine-bootloader.org/
@@ -20,7 +20,7 @@ multiboot1 and 2, the native Limine boot protocol, and more.
 %prep
 %autosetup
 
-%conf
+%build
 %ifarch x86_64
 %configure --enable-bios-cd --enable-bios-pxe --enable-bios --enable-uefi-x86-64 --enable-uefi-cd CROSS_TOOLCHAIN=llvm
 %endif
@@ -30,8 +30,6 @@ multiboot1 and 2, the native Limine boot protocol, and more.
 %ifarch aarch64
 %configure --enable-uefi-aarch64 --enable-uefi-cd CROSS_TOOLCHAIN=llvm
 %endif
-
-%build
 %make_build
 
 %install
@@ -76,6 +74,8 @@ multiboot1 and 2, the native Limine boot protocol, and more. (development librar
 %{_includedir}/limine.h
 
 %changelog
+* Wed Dec 21 2022 Eric Zhang <ericzhang456@disroot.org> - 4.20221216.0
+    - fix build for older versions of rpm
 * Wed Dec 21 2022 Eric Zhang <ericzhang456@disroot.org> - 4.20221216.0
     - add support for opensuse i586
 * Wed Dec 21 2022 Eric Zhang <ericzhang456@disroot.org> - 4.20221216.0
