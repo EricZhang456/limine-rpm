@@ -1,5 +1,5 @@
 Name:		limine
-Version:	4.20221216.0
+Version:	4.20221230.0
 Release:	4
 Summary:	An advanced, portable, multiprotocol bootloader
 License:	BSD
@@ -61,7 +61,7 @@ multiboot1 and 2, the native Limine boot protocol, and more.
 %endif
 
 %package devel
-Version:	4.20221216.0
+Version:	4.20221230.0
 Release:	2
 Summary:	An advanced, portable, multiprotocol bootloader (development library)
 BuildArch:	noarch
@@ -74,6 +74,8 @@ multiboot1 and 2, the native Limine boot protocol, and more. (development librar
 %{_includedir}/limine.h
 
 %changelog
+* Fri Dec 30 2022 Eric Zhang <ericzhang456@disroot.org> - 4.20221230.0
+    - bump version
 * Wed Dec 21 2022 Eric Zhang <ericzhang456@disroot.org> - 4.20221216.0
     - fix build for older versions of rpm
 * Wed Dec 21 2022 Eric Zhang <ericzhang456@disroot.org> - 4.20221216.0
