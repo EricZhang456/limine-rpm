@@ -1,6 +1,6 @@
 Name:		limine
 Version:	4.20221230.0
-Release:	4
+Release:	1
 Summary:	An advanced, portable, multiprotocol bootloader
 License:	BSD
 URL:		https://limine-bootloader.org/
@@ -62,7 +62,7 @@ multiboot1 and 2, the native Limine boot protocol, and more.
 
 %package devel
 Version:	4.20221230.0
-Release:	2
+Release:	1
 Summary:	An advanced, portable, multiprotocol bootloader (development library)
 BuildArch:	noarch
 
