@@ -1,6 +1,6 @@
 Name:		limine
 Version:	4.20230207.1
-Release:	2
+Release:	1
 Summary:	An advanced, portable, multiprotocol bootloader
 License:	BSD
 URL:		https://limine-bootloader.org/
