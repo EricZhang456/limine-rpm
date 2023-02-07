@@ -1,5 +1,5 @@
 Name:		limine
-Version:	4.20230120.0
+Version:	4.20230207.1
 Release:	2
 Summary:	An advanced, portable, multiprotocol bootloader
 License:	BSD
@@ -74,6 +74,8 @@ multiboot1 and 2, the native Limine boot protocol, and more. (development librar
 %{_includedir}/limine.h
 
 %changelog
+* Tue Feb 7 2023 Eric Zhang <ericzhang456@disroot.org> - 4.20230207.1
+    - bump version to 4.20230207.1
 * Sat Jan 21 2023 Eric Zhang <ericzhang456@disroot.org> - 4.20230120.0
     - bump version to 4.20230120.0
 * Sat Jan 14 2023 Eric Zhang <ericzhang456@disroot.org> - 4.20230114.0
